@@ -1,0 +1,248 @@
+/* premières demandes mobiles */
+
+
+/* 
+Palette de couleurs
+	#white
+	#rgba(255, 255, 255, .5)
+    #black
+    #rgba(255, 255, 255, .3)
+    #rgb(255, 209, 143)
+    #rgba(5, 5, 5, 0.8)
+    #rgb(239, 239, 239)
+
+Rythme
+    2px
+    4px
+    5px
+    20px
+    24px
+    250px
+    500px
+    25px
+    380px
+    700px
+*/
+
+body {
+    background-color: black;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.header .button {
+    border: none;
+}
+
+.nav .button {
+    width: 48%;
+    margin: 2px 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logo {
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 10px;
+    z-index: 100;
+}
+
+.nav {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.action,
+.action p {
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    font-size: x-large;
+}
+
+.action h1,
+.action h2 {
+    margin-bottom: 0;
+    color: black;
+    background-color: cornsilk;
+    font-weight: bold;
+    border-color: white;
+    border-radius: 10px;
+    border: 3px solid cornsilk;
+}
+
+.info {
+    background-color: white;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.info .button {
+    background-color: #000;
+    border: none;
+    color: white;
+}
+
+.info .button:hover {
+    background-color: rgb(239, 239, 239);
+    border: none;
+    color: #000;
+}
+
+.footer {
+    color: rgba(5, 5, 5, 0.8);
+    padding-top: 25px;
+}
+
+.social-media-list li {
+    list-style: none;
+    margin: 0;
+}
+
+.social-media-list a {
+    text-decoration: none;
+}
+
+.icon>svg {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.footer .copyright {
+    display: flex;
+    flex: 2 1 500px;
+    margin-right: 30px;
+    color: white;
+}
+
+.footer .signup {
+    display: flex;
+    flex: 1 1 250px;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.signup label {
+    width: 100%;
+}
+
+.signup input[type="email"] {
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.signup input[type="submit"] {
+    border-radius: 0 4px 4px 0;
+    padding: 0 10px;
+    color: black;
+}
+
+
+/* styles pour des largeurs plus grandes que les mobiles */
+
+
+/* styles pour une largeur de 400 pixels et plus */
+
+@media (min-width: 400px) {}
+
+
+/* styles pour des largeurs plus grandes que les phablets */
+
+
+/* styles pour une largeur de 550 pixels et plus */
+
+@media (min-width: 550px) {
+    .info {
+        padding-top: 20px;
+    }
+    .nav {}
+    .nav .button {
+        width: auto;
+        padding: 0 30px;
+    }
+}
+
+
+/* styles pour des largeurs plus grandes que les tablettes */
+
+
+/* styles pour une largeur de 750 px et plus */
+
+@media (min-width: 750px) {
+    .action {
+        padding: 75px 0 25px;
+    }
+}
+
+
+/* styles pour des largeurs plus grandes que les moniteurs d'ordinateur */
+
+
+/* styles pour une largeur de 1000 px et plus */
+
+@media (min-width: 1000px) {
+    .header {
+        padding: 50px 0;
+    }
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+
+/* Paramètres pour revenir en haut de l'écran
+   ========================================================================== */
+
+.topSlides {
+    display: none;
+}
+
+
+/* Configurer des blocs de texte
+  ========================================================================== */
+
+
+/**
+* Indentation en haut et en bas
+*/
+
+.padding_section-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+
+
+/**
+* Fond noir et paramètres
+*/
+
+.black_bkgrd_section {
+    color: #fff!important;
+    background-color: #000!important;
+    margin-left: 5%;
+    margin-right: 5%;
+}

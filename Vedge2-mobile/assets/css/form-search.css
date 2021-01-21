@@ -1,0 +1,61 @@
+/* Sélecteurs pour le formulaire de recherche */
+
+
+/* 
+Palette de couleurs
+	#white
+	##f1f1f1
+    #black
+    #grey
+    ##2196F3
+    #0b7dda
+
+Rythme
+    1px
+    10px
+    17px
+    16px
+    18px
+*/
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    margin-left: 10%;
+}
+
+form.search label {
+    color: white;
+    margin-left: 10%;
+}
+
+form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 10%;
+    text-align: center;
+    line-height: 17px;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}

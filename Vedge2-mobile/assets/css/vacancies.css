@@ -1,0 +1,95 @@
+/* Sélecteurs de bloc de carrière (postes vacants requis) */
+
+
+/* 
+Palette de couleurs
+	#white
+	##555
+    #black
+    #maroon
+    #rgba(0, 0, 0, 0.16)
+    #rgba(0, 0, 0, 0.2)
+
+Rythme
+    0px
+    2px 
+    16px
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: auto;
+    margin-bottom: 16px;
+    padding: 0 2px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container p {
+    text-align: center;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+}
+
+.jobname {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.place {
+    color: black;
+}
+
+.title {
+    color: maroon;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: block;
+    /* padding: 8px; */
+    padding-left: 17%;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,86 @@
+/* Plusieurs diaporamas sur la même page */
+
+
+/* 
+Palette de couleurs
+	#white
+	##f1f1f1
+    #black
+
+Rythme
+    -22px
+    16px
+    18px
+*/
+
+
+/*!
+ * Plusieurs Diaporamas (Slideshow)   
+ */
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Pour faire fonctionner plusieurs diaporamas sur une seule page, 
+   nous devons classer les membres de chaque groupe de diaporamas 
+   avec différentes classes  
+*/
+
+.mySlides1,
+.mySlides2 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Conteneur de diaporama (Slideshow) */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Boutons next et previous */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/* Positionnez le "bouton suivant" vers la droite */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Au survol, ajoutez une couleur de fond gris */
+
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}

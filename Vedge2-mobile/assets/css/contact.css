@@ -1,0 +1,112 @@
+/* Sélecteurs pour formulaire de contact */
+
+
+/* 
+Palette de couleurs
+	#white
+	#089df4
+    #black
+    #92c9e9
+
+Rythme
+    1px
+    12px
+    16px
+    20px
+    25px
+    380px
+*/
+
+.bg-img {
+    /* L'image utilisée */
+    background-image: url("../img/map.jpg");
+    min-height: 380px;
+    /* Centrez et redimensionnez bien l'image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 96%;
+    margin-left: 2%;
+}
+
+
+/* Ajouter des styles au conteneur de formulaire */
+
+.container_form {
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    width: 50%;
+    padding: 16px;
+    background-color: white;
+}
+
+.container_form label {
+    color: black;
+    background-color: white;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    resize: vertical;
+    color: black;
+    font-size: x-small;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #089df4;
+    outline: none;
+    color: black;
+    font-weight: 900;
+}
+
+input[type=submit] {
+    background-color: #089df4;
+    color: black;
+    font-weight: 900;
+}
+
+input[type=submit]:hover {
+    background-color: #92c9e9;
+    font-weight: 900;
+    color: black;
+}
+
+textarea {
+    resize: none;
+    color: black;
+}
+
+
+/* Définir un style pour le bouton d'envoi */
+
+.btn {
+    background-color: #089df4;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    /* opacity: 0.9; */
+}
+
+
+/* Disposition réactive - lorsque l'écran mesure moins de 600 px de large, 
+   faites empiler les deux colonnes l'une sur l'autre plutôt que l'une à côté de l'autre 
+*/
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
